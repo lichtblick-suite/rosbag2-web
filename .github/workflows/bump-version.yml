@@ -3,21 +3,21 @@ name: Auto Bump Version
 on:
   push:
     branches:
-      - main  # Trigger on push to main branch
+      - main # Trigger on push to main branch
 
 jobs:
   bump:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.LICHTBLICK_GITHUB_TOKEN }}
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: '18'
+          node-version: "24"
 
       - run: corepack enable
 
@@ -25,16 +25,14 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            **/node_modules
-            ~/.cache/yarn
+            .yarn/cache
+            .yarn/install-state.gz
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn install --mode skip-build
-        env:
-          YARN_ENABLE_IMMUTABLE_INSTALLS: false
+        run: yarn install --immutable
 
       - name: Set up Git
         run: |
@@ -42,7 +40,7 @@ jobs:
           git config --global user.email 'github-actions@github.com'
 
       - name: Bump version in root package.json
-        run: yarn version --new-version patch --no-git-tag-version
+        run: yarn version patch --immediate
 
       - name: Commit version bumps
         id: commit_version_bumps
