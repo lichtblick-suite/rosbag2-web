@@ -19,13 +19,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Lichtblick-Suite/rosbag2-web.git"
+    "url": "https://github.com/lichtblick-suite/rosbag2-web.git"
   },
   "author": {
     "name": "Lichtblick",
     "email": "lichtblick@bmwgroup.com"
   },
-  "homepage": "https://github.com/Lichtblick-Suite/rosbag2-web",
+  "homepage": "https://github.com/lichtblick-suite/rosbag2-web",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
