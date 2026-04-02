@@ -64,7 +64,7 @@
   "dependencies": {
     "@foxglove/sql.js": "^0.0.4",
     "@lichtblick/cdr": "^1.0.1",
-    "@lichtblick/rosbag2": "1.0.0",
+    "@lichtblick/rosbag2": "^1.0.6",
     "@lichtblick/rostime": "^1.0.0"
   },
   "packageManager": "yarn@4.5.3"

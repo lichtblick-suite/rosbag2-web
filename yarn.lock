@@ -448,40 +448,40 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@foxglove/message-definition@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "@foxglove/message-definition@npm:0.3.1"
-  checksum: 10c0/521fadfadcdb9bbde7d28908e429b93a387ded524f8abeb361f27ae5a6f36b8d5dc29cf23dbf0791cc366de59c48dc03aede861faa59df1c64d030b6c659981a
+"@foxglove/message-definition@npm:0.5.0":
+  version: 0.5.0
+  resolution: "@foxglove/message-definition@npm:0.5.0"
+  checksum: 10c0/a6562326e1b59a8f8d6ff3e60145d487e5136fb4e67fb588b7cbc4d1d7e969fd0f6d1eadcef97f52ecd9326c684e7bfdb465c7d3adc22896a7a84981a5a1a891
   languageName: node
   linkType: hard
 
-"@foxglove/rosmsg-msgs-common@npm:^3.0.0":
-  version: 3.2.1
-  resolution: "@foxglove/rosmsg-msgs-common@npm:3.2.1"
+"@foxglove/rosmsg-msgs-common@npm:^3.2.2":
+  version: 3.2.3
+  resolution: "@foxglove/rosmsg-msgs-common@npm:3.2.3"
   dependencies:
-    "@foxglove/message-definition": "npm:^0.3.1"
-    "@foxglove/rosmsg": "npm:^5.0.4"
-  checksum: 10c0/1f5719916a6cfce176c72d7420b8ab3bdcd2a919a2843f2d0d5c333d24dd57fb222bc119c7ced34392062f25ce6e2043c925cb4a8b253a04214651f41db268a8
+    "@foxglove/message-definition": "npm:0.5.0"
+    "@foxglove/rosmsg": "npm:^5.0.5"
+  checksum: 10c0/daf015a8f9a3604bf29391ea5deab64a214942724a30b479cd8891552c8c0c8d2c640ec7f9a984b770db5d401ff5138d1768e124a7e6b148c5ca743bc4917bca
   languageName: node
   linkType: hard
 
-"@foxglove/rosmsg@npm:^5.0.4":
-  version: 5.0.4
-  resolution: "@foxglove/rosmsg@npm:5.0.4"
+"@foxglove/rosmsg@npm:^5.0.5":
+  version: 5.0.5
+  resolution: "@foxglove/rosmsg@npm:5.0.5"
   dependencies:
-    "@foxglove/message-definition": "npm:^0.3.1"
+    "@foxglove/message-definition": "npm:0.5.0"
     md5-typescript: "npm:^1.0.5"
-  checksum: 10c0/27651394a2471a88b5d8668ccc8e72592548a49afe0b4a19aa617019a37d7bf5dd49018e2b510e4e8aa778c21e25ca4873e7900613be8d6994a771fab439d929
+  checksum: 10c0/be54349eede72317bf42f7b5706804fdc7152d6e0af43ad1e9f0ee4b5a2f92f6a218453e4f9c22fd1571ad0528bd7d0be80f6f2640fbcdb53778422b4372fc1a
   languageName: node
   linkType: hard
 
-"@foxglove/schemas@npm:^1.3.1":
-  version: 1.6.4
-  resolution: "@foxglove/schemas@npm:1.6.4"
+"@foxglove/schemas@npm:^1.9.0":
+  version: 1.13.0
+  resolution: "@foxglove/schemas@npm:1.13.0"
   dependencies:
-    "@foxglove/rosmsg-msgs-common": "npm:^3.0.0"
-    tslib: "npm:^2.5.0"
-  checksum: 10c0/e0b22c1d47df12a3dfd00b6535dfe219e39d8be88ae5228a269e5ab00ebe78cf9afeef7a7ff204067a6583d145d1b8783bf1e77d3aa72831ef77b5f76ec06848
+    "@foxglove/rosmsg-msgs-common": "npm:^3.2.2"
+    tslib: "npm:^2"
+  checksum: 10c0/047b3f8bb2d06c1edaad0e119e068bea906ef471c6af37164063cd6c83059ce3382c5eb7c29d81b609f12fbb878651ed3b57c6606d5079593915af682d7396c9
   languageName: node
   linkType: hard
 
@@ -865,7 +865,7 @@ __metadata:
     "@foxglove/sql.js": "npm:^0.0.4"
     "@lichtblick/cdr": "npm:^1.0.1"
     "@lichtblick/eslint-plugin": "npm:1.0.1"
-    "@lichtblick/rosbag2": "npm:1.0.0"
+    "@lichtblick/rosbag2": "npm:^1.0.6"
     "@lichtblick/rostime": "npm:^1.0.0"
     "@types/jest": "npm:^29.4.0"
     "@types/sql.js": "npm:^1.4.4"
@@ -888,16 +888,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@lichtblick/rosbag2@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@lichtblick/rosbag2@npm:1.0.0"
+"@lichtblick/rosbag2@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "@lichtblick/rosbag2@npm:1.0.6"
   dependencies:
-    "@foxglove/schemas": "npm:^1.3.1"
+    "@foxglove/schemas": "npm:^1.9.0"
     "@lichtblick/rosmsg-msgs-common": "npm:1.0.1"
     "@lichtblick/rosmsg2-serialization": "npm:1.0.0"
     "@lichtblick/rostime": "npm:1.0.0"
     js-yaml: "npm:^4.1.0"
-  checksum: 10c0/65a85239de5a7eecc5bc47a01503c3cdbfd9446318abb4069dc304499eb191ac52576973ac40bebf57eb4014f389b704f9fd995169bfedd61f6917e4d5e1ce7a
+  checksum: 10c0/7d166861c0695b6b36eeb1aea8887a88ae015eaa16194d9ecfe4d44d630697ce1c8eb0dd50b9e0c2582f677c86fdc79bd0c0ee63eb2bd8313d5a28651ef23678
   languageName: node
   linkType: hard
 
@@ -5600,7 +5600,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.5.0, tslib@npm:^2.6.2":
+"tslib@npm:^2":
+  version: 2.8.1
+  resolution: "tslib@npm:2.8.1"
+  checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.6.2":
   version: 2.7.0
   resolution: "tslib@npm:2.7.0"
   checksum: 10c0/469e1d5bf1af585742128827000711efa61010b699cb040ab1800bcd3ccdd37f63ec30642c9e07c4439c1db6e46345582614275daca3e0f4abae29b0083f04a6
